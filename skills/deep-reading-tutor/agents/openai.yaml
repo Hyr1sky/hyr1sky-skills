@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deep Reading Tutor"
+  short_description: "Guided paper and blog deep reading"
+  default_prompt: "Use $deep-reading-tutor to guide me through this paper with navigation, grilling, and tailored notes."
