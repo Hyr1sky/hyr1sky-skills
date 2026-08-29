@@ -1,0 +1,4 @@
+interface:
+  display_name: "Software System Mastery"
+  short_description: "Build a cross-layer model of an existing system"
+  default_prompt: "Use $software-system-mastery to help me understand this system well enough to reason about a change safely."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architecture Drift Audit"
+  short_description: "Compare architecture intent with the as-built system"
+  default_prompt: "Use $architecture-drift-audit to compare our intended architecture with the current implementation and prioritize consequential drift."

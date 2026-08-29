@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Narrative Builder"
+  short_description: "Shape project truth for a specific audience"
+  default_prompt: "Use $project-narrative-builder to turn these project facts into a narrative for this audience and decision."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Requirements Reality Check"
+  short_description: "Test requirements against operating reality"
+  default_prompt: "Use $requirements-reality-check to stress-test this requirement before we commit to a specification or implementation."
