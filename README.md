@@ -8,12 +8,12 @@
 | --- | --- | --- |
 | `deep-reading-tutor` | 已使用 | 对单篇论文、文章或文档进行导航、抽问与定制笔记。 |
 | `research-codebase-to-wiki` | 已使用 | 将代码库研究为有证据锚点的解释型 Wiki。 |
-| `software-system-mastery` | 孵化中 | 围绕真实任务建立跨领域、运行时、数据、模块、部署和质量属性的系统心智模型。 |
-| `requirements-reality-check` | 孵化中 | 在规格与实现前，从业务流程和真实软硬件环境检验需求。 |
-| `project-narrative-builder` | 孵化中 | 把既有项目事实转化为面向特定受众与决策的叙事。 |
-| `architecture-drift-audit` | 孵化中 | 对照架构意图与实际实现，恢复蓝图并审计有后果的漂移。 |
+| `software-system-mastery` | 测试中 | 围绕真实任务建立跨领域、运行时、数据、模块、部署和质量属性的系统心智模型。 |
+| `requirements-reality-check` | 测试中 | 在规格与实现前，从业务流程和真实软硬件环境检验需求。 |
+| `project-narrative-builder` | 测试中 | 把既有项目事实转化为面向特定受众与决策的叙事。 |
+| `architecture-drift-audit` | 测试中 | 对照架构意图与实际实现，恢复蓝图并审计有后果的漂移。 |
 
-四个“孵化中”技能目前仅保存在本仓库，不安装到全局 Codex skills 目录。试用时直接在任务中指定对应 `SKILL.md` 的绝对路径；行为稳定后再决定是否常驻安装。
+四个“测试中”技能目前仅保存在本仓库，不安装到全局 Codex skills 目录。试用时直接在任务中指定对应 `SKILL.md` 的绝对路径；行为稳定后再决定是否常驻安装。
 
 ## 目录结构
 
@@ -56,6 +56,6 @@ python3 /Users/hyriskyhe/.codex/skills/.system/skill-creator/scripts/quick_valid
 - `SKILL.md` 应说明技能的触发场景、工作流程和需要读取的补充资源。
 - 参考资料放在 `references/`，避免把长文档直接塞进 `SKILL.md`。
 - 可复用脚本放在 `scripts/`，生成产物不要提交到仓库，除非它本身是技能资产。
-- 修改技能后先运行校验。孵化中的技能先通过绝对路径试用；只有决定常驻后，才执行本地安装脚本。
+- 修改技能后先运行校验。测试中的技能先通过绝对路径试用；只有决定常驻后，才执行本地安装脚本。
 
 跨技能的正向、负向和组合路由用例记录在 `tests/skill-routing-cases.md`。

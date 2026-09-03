@@ -1,6 +1,6 @@
 ---
 name: software-system-mastery
-description: "Build an evidence-backed mental model of an existing software system across domain, runtime, data, module, deployment, and quality-attribute views. Use when the user needs to understand, explain, onboard to, or reason safely about a system before changing it. Do not use when the main deliverable is a paper-style codebase wiki or a quiz on one document."
+description: "Build an evidence-backed mental model of an existing software system across domain, runtime, data, module, deployment, and quality-attribute views. Use when the user needs to understand, explain, onboard to, or reason safely about a system before changing it. Do not use when the main deliverable is a static codebase wiki or a quiz on one document."
 ---
 
 # Software System Mastery
@@ -10,7 +10,7 @@ Help the user become able to reason about an existing software system, not merel
 ## Boundary
 
 - Use this skill for system comprehension, onboarding, change preparation, technical handoff, and cross-layer reasoning.
-- Use `research-codebase-to-wiki` instead when the requested product is a sourced, paper-style repo wiki centered on Task/Method/Dataset/Metric/Result.
+- Use `research-codebase-to-wiki` instead when the requested product is a sourced, static repository wiki. That skill selects a Product Architecture or Research Implementation profile based on the codebase.
 - Use `deep-reading-tutor` instead when the learning object is one paper or document and the user wants staged reading and grilling.
 - Do not turn this into an architecture conformance audit unless the user asks to compare intended and implemented architecture; that belongs to `architecture-drift-audit`.
 

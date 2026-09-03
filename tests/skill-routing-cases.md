@@ -13,6 +13,21 @@ These cases test selection boundaries, not exact wording. A passing result choos
 | Established project truth as communication | `project-narrative-builder` | A specific audience can understand, decide, or act. |
 | Intended versus as-built architecture as a comparison | `architecture-drift-audit` | Consequential differences are evidenced, classified, and reconciled. |
 
+## Research Codebase To Wiki
+
+### Should select
+
+1. “Turn this mature local-first product repo into an offline architecture wiki with system maps, critical flows, persistence, evals, debugging, and code anchors.”
+2. “Turn this paper implementation into a browsable wiki covering Task/Method/Dataset/Metric/Result and reproducibility evidence.”
+3. “Create a versioned static repository explainer that records the source commit, unresolved claims, and evidence files.”
+
+### Should not select
+
+1. “Help me take ownership of this system and test whether I can predict a failed payment recovery.” → `software-system-mastery`
+2. “Compare the accepted ADR dependency rules with current imports.” → `architecture-drift-audit`
+3. “Review the changes in this pull request.” → code review workflow
+4. “Teach me one paper interactively and quiz my weak points.” → `deep-reading-tutor`
+
 ## Software System Mastery
 
 ### Should select

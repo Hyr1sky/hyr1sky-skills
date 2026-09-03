@@ -18,7 +18,6 @@ from collections import Counter
 from pathlib import Path
 from typing import Any
 
-
 SKIP_DIRS = {
     ".git",
     "__pycache__",
@@ -120,12 +119,11 @@ def gml_count(path: Path) -> tuple[str, str | None]:
 
         graph = nx.read_gml(path)
         node_types = Counter(attrs.get("type", "Unknown") for _, attrs in graph.nodes(data=True))
-        edge_types = Counter(attrs.get("relation", "Unknown") for *_, attrs in graph.edges(data=True))
-        summary = f"{graph.number_of_nodes()} nodes, {graph.number_of_edges()} edges"
-        detail = (
-            f"Node types: {dict(node_types)}\n\n"
-            f"Edge types: {dict(edge_types)}"
+        edge_types = Counter(
+            attrs.get("relation", "Unknown") for *_, attrs in graph.edges(data=True)
         )
+        summary = f"{graph.number_of_nodes()} nodes, {graph.number_of_edges()} edges"
+        detail = f"Node types: {dict(node_types)}\n\nEdge types: {dict(edge_types)}"
         return summary, detail
     except Exception as exc:
         return f"unreadable GML: {type(exc).__name__}", None

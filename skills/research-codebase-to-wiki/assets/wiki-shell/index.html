@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content="research-codebase-to-wiki" />
+    <title>{{TITLE}}</title>
+    <link rel="stylesheet" href="./wiki.css" />
+  </head>
+  <body>
+    <div class="reading-progress" aria-hidden="true"><span id="reading-progress-bar"></span></div>
+    <button class="mobile-nav-toggle" id="mobile-nav-toggle" type="button" aria-controls="sidebar" aria-expanded="false">目录</button>
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#start">{{TITLE}}</a>
+      <p class="snapshot">{{PROFILE}} · {{SOURCE_COMMIT}}</p>
+      <label class="search-label" for="global-search">搜索 Wiki</label>
+      <input id="global-search" type="search" placeholder="输入术语、流程或文件" autocomplete="off" />
+      <nav aria-label="页面目录">{{NAV}}</nav>
+      <button id="theme-toggle" class="quiet-button" type="button">切换主题</button>
+    </aside>
+    <main>
+      <header class="hero" id="start" data-search="{{TITLE}} {{SUMMARY}}">
+        <p class="eyebrow">Evidence-backed repository wiki</p>
+        <h1>{{TITLE}}</h1>
+        <p class="lead">{{SUMMARY}}</p>
+        <div class="snapshot-card"><b>Source snapshot</b><code>{{SOURCE_COMMIT}}</code><span>{{PROFILE}}</span></div>
+      </header>
+      <p id="search-empty" class="search-empty" hidden>没有匹配的章节。</p>
+      {{CONTENT}}
+      <footer><p>Generated from a frozen repository snapshot. See <code>wiki-manifest.json</code> for provenance and unresolved claims.</p></footer>
+    </main>
+    <script src="./wiki.js"></script>
+  </body>
+</html>
